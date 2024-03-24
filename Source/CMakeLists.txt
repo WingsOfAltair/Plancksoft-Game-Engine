@@ -17,9 +17,9 @@ target_link_libraries(PlancksoftGameEngine PRIVATE d3d11.lib dxgi.lib d3dcompile
 
 # Debug and release flags
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-    target_compile_definitions(PlancksoftGameEngine PUBLIC TUTORIAL_DEBUG)
+    target_compile_definitions(PlancksoftGameEngine PUBLIC PlancksoftGameEngineDebug)
 elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
-    target_compile_definitions(PlancksoftGameEngine PUBLIC TUTORIAL_RELEASE)
+    target_compile_definitions(PlancksoftGameEngine PUBLIC PlancksoftGameEngineRelease)
 endif()
 
 # Macro definitions

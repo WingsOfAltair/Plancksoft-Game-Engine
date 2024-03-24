@@ -91,12 +91,12 @@
 					"define" : "FORCEINLINE=__forceinline"
 				},
 				{
-					"backtrace" : 4,
-					"define" : "RUNTIME_API=__declspec"
+					"backtrace" : 6,
+					"define" : "PlancksoftGameEngineDebug"
 				},
 				{
-					"backtrace" : 6,
-					"define" : "TUTORIAL_DEBUG"
+					"backtrace" : 4,
+					"define" : "RUNTIME_API=__declspec"
 				},
 				{
 					"backtrace" : 4,
