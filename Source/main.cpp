@@ -74,7 +74,7 @@ int main()
 			printf("Running Rendering Engine Successfully...\n");
 			first = false;
 		}
-		basicRenderer->ClearColor({ 0.5, 0.2, 0.6, 1.0 });
+		basicRenderer->ClearColor({ 1.0, 0.2, 0.6, 1.0 });
 		basicRenderer->SetPipeline();
 		basicRenderer->Draw(3);
 		basicRenderer->Present();

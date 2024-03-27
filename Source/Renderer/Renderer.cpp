@@ -77,13 +77,13 @@ void Renderer::CreateSwapChain()
 	swapchainDesc.BufferDesc.Width = mWindow->GetSize().X;
 	swapchainDesc.BufferDesc.Height = mWindow->GetSize().Y;
 	swapchainDesc.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-	swapchainDesc.BufferDesc.RefreshRate.Numerator = 60;
+	swapchainDesc.BufferDesc.RefreshRate.Numerator = 144;
 	swapchainDesc.BufferDesc.RefreshRate.Denominator = 1;
 	swapchainDesc.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
 	swapchainDesc.OutputWindow = mWindow->GetWindowNativeHandler();
-	swapchainDesc.SampleDesc.Count = 1;
-	swapchainDesc.SampleDesc.Quality = 0;
-	swapchainDesc.Windowed = true;
+	swapchainDesc.SampleDesc.Count = 4;
+	swapchainDesc.SampleDesc.Quality = DXGI_STANDARD_MULTISAMPLE_QUALITY_PATTERN;
+	swapchainDesc.Windowed = false;
 
 	ComPtr<IDXGIDevice> dxgiDevice;
 	mDevice.As(&dxgiDevice);
