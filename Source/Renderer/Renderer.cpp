@@ -83,7 +83,7 @@ void Renderer::CreateSwapChain()
 	swapchainDesc.OutputWindow = mWindow->GetWindowNativeHandler();
 	swapchainDesc.SampleDesc.Count = 4;
 	swapchainDesc.SampleDesc.Quality = DXGI_STANDARD_MULTISAMPLE_QUALITY_PATTERN;
-	swapchainDesc.Windowed = false;
+	swapchainDesc.Windowed = true;
 
 	ComPtr<IDXGIDevice> dxgiDevice;
 	mDevice.As(&dxgiDevice);
