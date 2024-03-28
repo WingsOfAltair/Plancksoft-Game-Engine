@@ -182,7 +182,6 @@ void Renderer::SetPipeline()
 	mDeviceContext->PSSetShader(mPixelShader.Get(), nullptr, 0);
 	mDeviceContext->VSSetShader(mVertexShader.Get(), nullptr, 0);
 	mDeviceContext->IASetInputLayout(mInputLayout.Get());
-	mDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 	D3D11_VIEWPORT viewport = {};
 	viewport.Width = (float)mWindow->GetSize().X;
@@ -193,6 +192,7 @@ void Renderer::SetPipeline()
 	viewport.TopLeftY = 0.0f;
 
 	mDeviceContext->RSSetViewports(1, &viewport);
+	mDeviceContext->IASetPrimitiveTopology(D3D10_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 }
 
 void Renderer::ClearColor(XMFLOAT4 color)

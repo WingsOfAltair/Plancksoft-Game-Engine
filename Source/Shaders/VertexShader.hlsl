@@ -10,10 +10,19 @@ struct vertexOut
     float4 color : COLOR;
 };
 
+cbuffer ConstantBuffer
+{
+    matrix worldMatrix;
+    Matrix viewMatrix;
+    matrix projectionMatrix;
+}
+
 vertexOut main(vertexIn input)
 {
     vertexOut output;
-    output.position = float4(input.position, 1.0);
+    output.position = mul(float4(input.position, 1.0f), worldMatrix);
+    output.position = mul(output.position, viewMatrix);
+    output.position = mul(output.position, projectionMatrix);
     output.color = input.color;
     
     return output;
