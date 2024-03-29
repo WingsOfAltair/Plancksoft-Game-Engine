@@ -3,7 +3,8 @@
 
 #include <Object/Object.h>
 #include <Object/Camera.h>
-#include <Object/Cube.h>
+#include <Object/ObjectTypes/Cube.h>	
+#include <Object/ObjectTypes/Sphere.h>
 
 int main()
 {
@@ -20,8 +21,11 @@ int main()
 	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
 
 	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
-
+	
+	Sphere* sphereProp = new Sphere(Sphere::SphereVertices, Sphere::SphereIndices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f });
+	
 	objects.push_back(cubeProp);
+	objects.push_back(sphereProp);
 
 	bool first = true;
 
@@ -43,6 +47,11 @@ int main()
 
 		for (auto& object : objects)
 		{
+			if (Sphere* sphere = dynamic_cast<Sphere*>(object)) {
+				for (auto& vertex : sphere->SphereVertices) {
+					vertex.color = { 1.0f, 1.0f, 0.0f, 1.0f };
+				}
+			}
 			object->SetProps();
 			object->UpdateMatrix(basicCamera->GetViewMatrix(), basicCamera->GetProjectionMatrix());
 			basicRenderer->Draw(object->GetIndexCount());

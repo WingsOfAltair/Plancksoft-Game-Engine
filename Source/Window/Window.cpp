@@ -21,7 +21,7 @@ void Window::Initialize()
 	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 	printf("GLFW Not Resizable.\n");
 
-	mWindow = glfwCreateWindow(mSize.X, mSize.Y, mTitle.c_str(), glfwGetPrimaryMonitor(), nullptr);
+	mWindow = glfwCreateWindow(mSize.X, mSize.Y, mTitle.c_str(), nullptr, nullptr);
 	printf("GLFW Created Window Successfully.\n");
 }
 

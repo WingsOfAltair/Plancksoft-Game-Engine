@@ -8,7 +8,7 @@ class Object
 {
 public:
 	Object(std::vector<VertexData> pArrayVertexData, std::vector<uint32_t> indexData, XMFLOAT3 startingPosition, XMFLOAT3 startingRotation, XMFLOAT3 startingScale);
-	~Object() = default;
+	virtual ~Object() = default;
 
 	void SetProps();
 	void SetPosition(XMFLOAT3 position) { mWorldData.Position = position; }
