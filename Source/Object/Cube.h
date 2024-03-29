@@ -1,11 +1,17 @@
 #pragma once
 
 #include <vector>
+#include <Object/Object.h>
 
-struct Cube
+class Cube : public Object
 {
 public:
-	std::vector<VertexData> Vertices =
+
+	Cube(std::vector<VertexData> vertices, std::vector<uint32_t> indices) : Object(vertices, indices) {
+		// Additional initialization for Cube if needed
+	}
+
+	static inline const std::vector<VertexData> Vertices =
 	{
 		{ {-0.5f, -0.5f, -0.5f}, {1.0f, 0.0f, 0.0f, 1.0f } },
 		{ {-0.5f, 0.5f, -0.5f}, {0.0f, 1.0f, 0.0f, 1.0f } },
@@ -18,7 +24,7 @@ public:
 		{ {0.5f, -0.5f, 0.5f}, {0.5f, 0.5f, 0.5f, 1.0f } },
 	};
 
-	std::vector<uint32_t> Indices = {
+	static inline const std::vector<uint32_t> Indices = {
 		// Front face
 	   0, 1, 2,
 	   0, 2, 3,

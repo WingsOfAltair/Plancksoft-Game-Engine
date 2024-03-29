@@ -19,9 +19,8 @@ int main()
 
 	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
 
-	Cube cube;
+	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices);
 
-	Object* cubeProp = new Object(cube.Vertices, cube.Indices);
 	objects.push_back(cubeProp);
 
 	bool first = true;
