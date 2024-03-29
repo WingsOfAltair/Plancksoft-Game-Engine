@@ -19,7 +19,7 @@ int main()
 
 	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
 
-	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices);
+	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
 
 	objects.push_back(cubeProp);
 

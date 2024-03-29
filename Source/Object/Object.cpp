@@ -3,15 +3,15 @@
 #include <iostream>
 #include <xutility>
 
-Object::Object(std::vector<VertexData> pArrayVertexData, std::vector<uint32_t> indexData)
+Object::Object(std::vector<VertexData> pArrayVertexData, std::vector<uint32_t> indexData, XMFLOAT3 startingPosition, XMFLOAT3 startingRotation, XMFLOAT3 startingScale)
 {
 	mIndexCount = indexData.size();
 
 	mWorldData =
 	{
-		.Position = { 0.0f, 0.0f, 0.0f },
-		.Rotation = { 0.0f, 0.0f, 0.0f },
-		.Scale = { 1.0f, 1.0f, 1.0f }
+		.Position = startingPosition,
+		.Rotation = startingRotation,
+		.Scale = startingScale
 	};
 
 	mTransformData = {

@@ -7,7 +7,7 @@
 class Object
 {
 public:
-	Object(std::vector<VertexData> pArrayVertexData, std::vector<uint32_t> indexData);
+	Object(std::vector<VertexData> pArrayVertexData, std::vector<uint32_t> indexData, XMFLOAT3 startingPosition, XMFLOAT3 startingRotation, XMFLOAT3 startingScale);
 	~Object() = default;
 
 	void SetProps();
