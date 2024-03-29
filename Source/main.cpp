@@ -3,47 +3,7 @@
 
 #include <Object/Object.h>
 #include <Object/Camera.h>
-
-#include <vector>
-
-std::vector<VertexData> vertices =
-{
-	{ {-0.5f, -0.5f, -0.5f}, {1.0f, 0.0f, 0.0f, 1.0f } },
-	{ {-0.5f, 0.5f, -0.5f}, {0.0f, 1.0f, 0.0f, 1.0f } },
-	{ {0.5f, 0.5f, -0.5f}, {0.0f, 0.0f, 1.0f, 1.0f } },
-	{ {0.5f, -0.5f, -0.5f}, {1.0f, 1.0f, 0.0f, 1.0f } },
-
-	{ {-0.5f, -0.5f, 0.5f}, {1.0f, 1.0f, 1.0f, 1.0f } },
-	{ {-0.5f, 0.5f, 0.5f}, {0.0f, 1.0f, 1.0f, 1.0f } },
-	{ {0.5f, 0.5f, 0.5f}, {1.0f, 0.0f, 0.0f, 1.0f } },
-	{ {0.5f, -0.5f, 0.5f}, {0.5f, 0.5f, 0.5f, 1.0f } },
-};	 
-
-std::vector<uint32_t> indices = {
-	// Front face
-   0, 1, 2,
-   0, 2, 3,
-
-   // Back face
-   4, 6, 5,
-   4, 7, 6,
-
-   // Top face
-   1, 5, 6,
-   1, 6, 2,
-
-   // Bottom face
-   0, 3, 7,
-   0, 7, 4,
-
-   // Left face
-   3, 2, 6,
-   3, 6, 7,
-
-   // Right face
-   0, 4, 5,
-   0, 5, 1
-};
+#include <Object/Cube.h>
 
 int main()
 {
@@ -57,10 +17,12 @@ int main()
 	Renderer* basicRenderer = RendererManager::CreateRenderer(basicWindow);
 	printf("Renderer created.\n");
 
-	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 3.0f }, XMINT2(1280,720));
+	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
 
-	Object* cube = new Object(vertices, indices);
-	objects.push_back(cube);
+	Cube cube;
+
+	Object* cubeProp = new Object(cube.Vertices, cube.Indices);
+	objects.push_back(cubeProp);
 
 	bool first = true;
 
