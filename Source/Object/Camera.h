@@ -13,7 +13,8 @@ public:
 	Camera(XMFLOAT3 pos, XMINT2 windowSize) : mPosition(pos), mWindowSize(windowSize)
 	{
 		mView = XMMatrixIdentity();
-		mProjection = XMMatrixIdentity();
+		float aspectRatio = static_cast<float>(windowSize.x) / static_cast<float>(windowSize.y);
+		mProjection = XMMatrixPerspectiveFovLH(XM_PIDIV4, aspectRatio, 0.01f, 100.0f);
 		mSpeed = 0.2f;
 		mSensitivity = 100.0f;
 	}
