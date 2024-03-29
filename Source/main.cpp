@@ -47,11 +47,11 @@ int main()
 
 		for (auto& object : objects)
 		{
-			if (Sphere* sphere = dynamic_cast<Sphere*>(object)) {
+			/*if (Sphere* sphere = dynamic_cast<Sphere*>(object)) {
 				for (auto& vertex : sphere->SphereVertices) {
 					vertex.color = { 1.0f, 1.0f, 0.0f, 1.0f };
 				}
-			}
+			}*/
 			object->SetProps();
 			object->UpdateMatrix(basicCamera->GetViewMatrix(), basicCamera->GetProjectionMatrix());
 			basicRenderer->Draw(object->GetIndexCount());

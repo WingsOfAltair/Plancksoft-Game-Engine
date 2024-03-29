@@ -26,7 +26,7 @@ public:
                 float y = cosTheta + offsetY;
                 float z = sinPhi * sinTheta + offsetZ;
 
-                vertices.push_back({ {radius * x, radius * y, radius * z}, {1.0f, 1.0f, 1.0f, 1.0f} });
+                vertices.push_back({ {radius * x, radius * y, radius * z}, {1.0f, 0.0f, 0.0f, 1.0f} });
             }
         }
 
