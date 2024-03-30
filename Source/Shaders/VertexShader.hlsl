@@ -1,13 +1,13 @@
 struct vertexIn
 {
     float3 position : POSITION;
-    float4 color : COLOR;
+    float2 uv : TEXCOORD;
 };
 
 struct vertexOut
 {
     float4 position : SV_POSITION;
-    float4 color : COLOR;
+    float2 uv : TEXCOORD0;
 };
 
 cbuffer ConstantBuffer
@@ -23,7 +23,7 @@ vertexOut main(vertexIn input)
     output.position = mul(float4(input.position, 1.0f), worldMatrix);
     output.position = mul(output.position, viewMatrix);
     output.position = mul(output.position, projectionMatrix);
-    output.color = input.color;
+    output.uv = input.uv;
     
     return output;
 }
