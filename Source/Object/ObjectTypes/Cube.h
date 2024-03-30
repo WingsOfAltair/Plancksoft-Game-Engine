@@ -8,7 +8,7 @@ class Cube : public Object
 public:
 
 	Cube(std::vector<VertexData> vertices, std::vector<uint32_t> indices, XMFLOAT3 startingPosition, XMFLOAT3 startingRotation, XMFLOAT3 startingScale) : Object(vertices, indices, startingPosition, startingRotation, startingScale) {
-		// Additional initialization for Cube if needed
+		
 	}
 
 	static inline const std::vector<VertexData> Vertices =

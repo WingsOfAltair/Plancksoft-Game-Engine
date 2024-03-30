@@ -45,20 +45,18 @@ public:
             }
         }
     }
-
-    // Preset vertices and indices for a sphere with translation
+                                                                     
     static inline std::vector<VertexData> SphereVertices = []() {
         std::vector<VertexData> vertices;
         std::vector<uint32_t> indices;
-
-        // Change the offsetX, offsetY, and offsetZ values as needed to move the sphere
+                                                                                         
         generateSphere(vertices, indices, 20, 20, 0.5f, 1.0f, 2.0f, 3.0f);
 
         return vertices;
         }();
 
         static inline std::vector<uint32_t> SphereIndices = []() {
-            std::vector<VertexData> vertices; // Unused, just to trigger generation
+            std::vector<VertexData> vertices;
             std::vector<uint32_t> indices;
 
             generateSphere(vertices, indices, 20, 20, 0.5f, 1.0f, 2.0f, 3.0f);

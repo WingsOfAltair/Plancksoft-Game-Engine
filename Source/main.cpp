@@ -3,8 +3,9 @@
 
 #include <Object/Object.h>
 #include <Object/Camera.h>
-#include <Object/ObjectTypes/Cube.h>	
-#include <Object/ObjectTypes/Sphere.h>
+#include <Object/ObjectTypes/Cube.h>		
+#include <Object/ObjectTypes/Sphere.h>	
+#include <Object/ObjectTypes/Triangle.h>
 
 int main()
 {
@@ -23,9 +24,12 @@ int main()
 	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
 	
 	Sphere* sphereProp = new Sphere(Sphere::SphereVertices, Sphere::SphereIndices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f });
+
+	Triangle* triangleProp = new Triangle(Triangle::Vertices, Triangle::Indices, { 0.0f, 3.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
 	
 	objects.push_back(cubeProp);
 	objects.push_back(sphereProp);
+	objects.push_back(triangleProp);
 
 	bool first = true;
 
