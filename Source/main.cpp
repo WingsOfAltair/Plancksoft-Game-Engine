@@ -21,11 +21,11 @@ int main()
 
 	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
 
-	Cube* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
+	Object* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
 	
-	Sphere* sphereProp = new Sphere(Sphere::SphereVertices, Sphere::SphereIndices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f });
+	Object* sphereProp = new Sphere(Sphere::SphereVertices, Sphere::SphereIndices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f });
 
-	Triangle* triangleProp = new Triangle(Triangle::Vertices, Triangle::Indices, { 0.0f, 3.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
+	Object* triangleProp = new Triangle(Triangle::Vertices, Triangle::Indices, { 0.0f, 3.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
 	
 	objects.push_back(cubeProp);
 	objects.push_back(sphereProp);
