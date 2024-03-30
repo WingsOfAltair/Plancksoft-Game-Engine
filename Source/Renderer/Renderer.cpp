@@ -167,7 +167,7 @@ void Renderer::CreateInputLayout()
 		D3D11_INPUT_PER_VERTEX_DATA, 0
 		}, 
 		{
-			"COLOR", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT,
+			"TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT,
 		D3D11_INPUT_PER_VERTEX_DATA, 0
 		}
 	};
@@ -192,7 +192,7 @@ void Renderer::SetPipeline()
 	viewport.TopLeftY = 0.0f;
 
 	mDeviceContext->RSSetViewports(1, &viewport);
-	mDeviceContext->IASetPrimitiveTopology(D3D10_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+	mDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 }
 
 void Renderer::ClearColor(XMFLOAT4 color)

@@ -4,8 +4,6 @@
 #include <Object/Object.h>
 #include <Object/Camera.h>
 #include <Object/ObjectTypes/Cube.h>		
-#include <Object/ObjectTypes/Sphere.h>	
-#include <Object/ObjectTypes/Triangle.h>
 
 int main()
 {
@@ -19,17 +17,10 @@ int main()
 	Renderer* basicRenderer = RendererManager::CreateRenderer(basicWindow);
 	printf("Renderer created.\n");
 
-	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 5.0f }, XMINT2(1280,720));
+	Camera* basicCamera = new Camera({ 0.0f, 0.0f, 3.0f }, { basicWindow->GetSize().X, basicWindow->GetSize().Y });
 
-	Object* cubeProp = new Cube(Cube::Vertices, Cube::Indices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
-	
-	Object* sphereProp = new Sphere(Sphere::SphereVertices, Sphere::SphereIndices, { 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, { 1.0f, 1.0f, 1.0f });
-
-	Object* triangleProp = new Triangle(Triangle::Vertices, Triangle::Indices, { 0.0f, 3.0f, 0.0f }, { 0.0f, 6.0f, 1.0f }, { 1.0f, 1.0f, 1.0f });
-	
+	Cube* cubeProp = new Cube();
 	objects.push_back(cubeProp);
-	objects.push_back(sphereProp);
-	objects.push_back(triangleProp);
 
 	bool first = true;
 
@@ -42,7 +33,7 @@ int main()
 			printf("Running Rendering Engine Successfully...\n");
 			first = false;
 		}
-		basicRenderer->ClearColor({ 0.0f, 0.0f, 0.0f, 1.0f });
+		basicRenderer->ClearColor({ 0.5f, 0.2f, 0.6f, 1.0f });
 
 		basicCamera->HandleInputs(basicWindow->GetWindowHandler());
 		basicCamera->UpdateMatrix();
@@ -51,12 +42,8 @@ int main()
 
 		for (auto& object : objects)
 		{
-			/*if (Sphere* sphere = dynamic_cast<Sphere*>(object)) {
-				for (auto& vertex : sphere->SphereVertices) {
-					vertex.color = { 1.0f, 1.0f, 0.0f, 1.0f };
-				}
-			}*/
 			object->SetProps();
+			object->Update();
 			object->UpdateMatrix(basicCamera->GetViewMatrix(), basicCamera->GetProjectionMatrix());
 			basicRenderer->Draw(object->GetIndexCount());
 		}
