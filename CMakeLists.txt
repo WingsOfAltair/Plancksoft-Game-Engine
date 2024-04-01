@@ -1,7 +1,7 @@
 ﻿cmake_minimum_required (VERSION 3.26)
 
 # PROJECT NAME
-project ("GameEngine")
+project ("D3DTutorial")
 
 # SETTING CMAKE OPTIONS
 if (POLICY CMP0141)
@@ -18,4 +18,5 @@ else()
 endif()
 
 # SETTING OUTPUT DIRECTORY
-add_subdirectory ("Source")
+add_subdirectory ("Source/Runtime")
+add_subdirectory ("Source/EditorApplication")

@@ -1,0 +1,20 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "Build\\Debug",
+      "Install\\Debug",
+      "Build\\Release",
+      "Install\\Release"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\Source",
+    "\\Source\\EditorApplication",
+    "\\Source\\Runtime",
+    "\\Source\\Runtime\\Graphics",
+    "\\Source\\Runtime\\Graphics\\Device"
+  ],
+  "SelectedNode": "\\Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
+  "PreviewInSolutionExplorer": false
+}
