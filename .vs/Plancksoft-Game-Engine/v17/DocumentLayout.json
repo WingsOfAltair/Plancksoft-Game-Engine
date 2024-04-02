@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Helmet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Runtime\\World\\Helmet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\EditorApplication\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Lantern.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\Runtime\\World\\Lantern.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,53 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GraphicsDeviceObject.h",
-              "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
-              "RelativeDocumentMoniker": "Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
-              "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
-              "RelativeToolTip": "Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-01T07:54:58.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GraphicsDevice.cpp",
-              "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp",
-              "RelativeDocumentMoniker": "Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp",
-              "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp",
-              "RelativeToolTip": "Source\\Runtime\\Graphics\\Device\\GraphicsDevice.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Helmet.cpp",
+              "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Helmet.cpp",
+              "RelativeDocumentMoniker": "Source\\Runtime\\World\\Helmet.cpp",
+              "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Helmet.cpp",
+              "RelativeToolTip": "Source\\Runtime\\World\\Helmet.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-01T07:54:24.632Z",
+              "WhenOpened": "2024-04-02T04:38:31.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CMakeLists.txt",
-              "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\CMakeLists.txt",
-              "RelativeDocumentMoniker": "Source\\EditorApplication\\CMakeLists.txt",
-              "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\CMakeLists.txt",
-              "RelativeToolTip": "Source\\EditorApplication\\CMakeLists.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-01T07:53:14.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\main.cpp",
               "RelativeDocumentMoniker": "Source\\EditorApplication\\main.cpp",
               "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\EditorApplication\\main.cpp",
               "RelativeToolTip": "Source\\EditorApplication\\main.cpp",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwA4AAAAxAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-01T07:51:57.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lantern.cpp",
+              "DocumentMoniker": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Lantern.cpp",
+              "RelativeDocumentMoniker": "Source\\Runtime\\World\\Lantern.cpp",
+              "ToolTip": "C:\\Users\\basha\\OneDrive\\Desktop\\Dev\\Plancksoft-Game-Engine\\Source\\Runtime\\World\\Lantern.cpp",
+              "RelativeToolTip": "Source\\Runtime\\World\\Lantern.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T04:42:24.65Z",
               "EditorCaption": ""
             }
           ]

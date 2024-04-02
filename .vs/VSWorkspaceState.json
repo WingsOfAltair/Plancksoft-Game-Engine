@@ -12,9 +12,10 @@
     "\\Source",
     "\\Source\\EditorApplication",
     "\\Source\\Runtime",
-    "\\Source\\Runtime\\Graphics",
-    "\\Source\\Runtime\\Graphics\\Device"
+    "\\Source\\Runtime\\Graphics\\Device",
+    "\\Source\\Runtime\\Resources",
+    "\\Source\\Runtime\\World"
   ],
-  "SelectedNode": "\\Source\\Runtime\\Graphics\\Device\\GraphicsDeviceObject.h",
+  "SelectedNode": "\\Source\\Runtime\\World\\Helmet.cpp",
   "PreviewInSolutionExplorer": false
 }
