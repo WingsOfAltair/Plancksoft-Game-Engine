@@ -12,10 +12,10 @@ Helmet::Helmet()
 	mEmmisive = std::make_shared<TextureResource>();
 	mNormal = std::make_shared<TextureResource>();
 
-	ResourceImporter::ReadStaticMeshFile(R"(D:\Projects\glTF-Sample-Models\2.0\DamagedHelmet\glTF\DamagedHelmet.gltf)", mMesh);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\DamagedHelmet\glTF\Default_albedo.jpg)", mBaseColor);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\DamagedHelmet\glTF\Default_emissive.jpg)", mEmmisive);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\DamagedHelmet\glTF\Default_normal.jpg)", mNormal);
+	ResourceImporter::ReadStaticMeshFile(R"(D:\Resources\DamagedHelmet.gltf)", mMesh);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Default_albedo.jpg)", mBaseColor);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Default_emissive.jpg)", mEmmisive);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Default_normal.jpg)", mNormal);
 
 	mModelMatrix.World = XMMatrixIdentity();
 	mModelMatrix.View = XMMatrixIdentity();

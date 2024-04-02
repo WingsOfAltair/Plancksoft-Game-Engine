@@ -12,10 +12,10 @@ Lantern::Lantern()
 	mEmmisive = std::make_shared<TextureResource>();
 	mNormal = std::make_shared<TextureResource>();
 
-	ResourceImporter::ReadStaticMeshFile(R"(D:\Projects\glTF-Sample-Models\2.0\Lantern\glTF\Lantern.gltf)", mMesh);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\Lantern\glTF\Lantern_baseColor.png)", mBaseColor);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\Lantern\glTF\Lantern_emissive.png)", mEmmisive);
-	ResourceImporter::ReadTextureFile(R"(D:\Projects\glTF-Sample-Models\2.0\Lantern\glTF\Lantern_normal.png)", mNormal);
+	ResourceImporter::ReadStaticMeshFile(R"(D:\Resources\Lantern.gltf)", mMesh);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_baseColor.png)", mBaseColor);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_emissive.png)", mEmmisive);
+	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_normal.png)", mNormal);
 
 	mModelMatrix.World = XMMatrixIdentity();
 	mModelMatrix.View = XMMatrixIdentity();
