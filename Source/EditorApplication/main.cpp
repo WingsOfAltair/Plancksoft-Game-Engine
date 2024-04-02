@@ -8,7 +8,8 @@
 #include <Runtime/World/ObjectPipeline.h>
 
 #include <Runtime/World/Helmet.h>
-#include <Runtime/World/Lantern.h>
+#include <Runtime/World/Lantern.h>	
+#include <Runtime/World/Fox.h>
 
 #include <Runtime/Graphics/Buffer/GraphicsBuffer.h>
 #include <Runtime/Graphics/Pipeline/Pipeline.h>
@@ -34,7 +35,9 @@ int main()
 	auto helmet = std::make_shared<Helmet>();
 	objects.push_back(helmet);
 	auto lantern = std::make_shared<Lantern>();
-	objects.push_back(lantern);
+	objects.push_back(lantern);		 
+	auto fox = std::make_shared<Fox>();
+	objects.push_back(fox);
 
 	LightCBData lightData = {};
 	lightData.ambientColor = XMFLOAT3(1.0f, 1.0f, 1.0f);
