@@ -1,0 +1,21 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "Build\\Debug",
+      "Install\\Debug",
+      "Build\\Release",
+      "Install\\Release"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\Source",
+    "\\Source\\EditorApplication",
+    "\\Source\\Runtime",
+    "\\Source\\Runtime\\Graphics\\Device",
+    "\\Source\\Runtime\\Resources",
+    "\\Source\\Runtime\\World"
+  ],
+  "SelectedNode": "\\Source\\Runtime\\World\\Helmet.cpp",
+  "PreviewInSolutionExplorer": false
+}
