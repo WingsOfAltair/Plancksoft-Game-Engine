@@ -13,8 +13,9 @@
     "\\Source\\EditorApplication",
     "\\Source\\Runtime",
     "\\Source\\Runtime\\Resources",
+    "\\Source\\Runtime\\Resources\\Mesh",
     "\\Source\\Runtime\\World"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\Source\\Runtime\\Resources\\ResourceImporter.cpp",
   "PreviewInSolutionExplorer": false
 }

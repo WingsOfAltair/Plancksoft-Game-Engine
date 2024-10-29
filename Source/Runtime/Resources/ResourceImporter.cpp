@@ -7,7 +7,14 @@
 
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
-#include <assimp/postprocess.h>
+#include <assimp/postprocess.h>	   
+#include <filesystem>
+
+std::string ResourceImporter::GetAbsolutePath() {
+	char path[MAX_PATH];
+	GetModuleFileName(NULL, path, MAX_PATH);
+	return std::filesystem::path(path).parent_path().string();
+}
 
 void ResourceImporter::ReadStaticMeshFile(const std::string& absolutePath, std::shared_ptr<Mesh> mesh)
 {

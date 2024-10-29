@@ -12,10 +12,12 @@ Lantern::Lantern()
 	mEmmisive = std::make_shared<TextureResource>();
 	mNormal = std::make_shared<TextureResource>();
 
-	ResourceImporter::ReadStaticMeshFile(R"(D:\Resources\Lantern.gltf)", mMesh);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_baseColor.png)", mBaseColor);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_emissive.png)", mEmmisive);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Lantern_normal.png)", mNormal);
+	std::string absolutePath = ResourceImporter::GetAbsolutePath();
+
+	ResourceImporter::ReadStaticMeshFile((std::filesystem::path(absolutePath) / "Resources/Lantern.gltf").string(), mMesh);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Lantern_baseColor.png").string(), mBaseColor);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Lantern_emissive.png").string(), mEmmisive);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Lantern_normal.png").string(), mNormal);
 
 	mModelMatrix.World = XMMatrixIdentity();
 	mModelMatrix.View = XMMatrixIdentity();

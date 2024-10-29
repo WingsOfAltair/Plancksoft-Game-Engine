@@ -3,7 +3,7 @@
 #include <Runtime/Resources/ResourceImporter.h>
 #include <Runtime/Graphics/Buffer/GraphicsBuffer.h>
 
-#include <Runtime/Graphics/GraphicsManager.h>
+#include <Runtime/Graphics/GraphicsManager.h>	 
 
 Fox::Fox()
 {
@@ -12,10 +12,12 @@ Fox::Fox()
 	mEmmisive = std::make_shared<TextureResource>();
 	mNormal = std::make_shared<TextureResource>();
 
-	ResourceImporter::ReadStaticMeshFile(R"(D:\Resources\Fox.gltf)", mMesh);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Fox_Texture.png)", mBaseColor);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Fox_emissive.png)", mEmmisive);
-	ResourceImporter::ReadTextureFile(R"(D:\Resources\Fox_Normal.png)", mNormal);
+	std::string absolutePath = ResourceImporter::GetAbsolutePath();
+
+	ResourceImporter::ReadStaticMeshFile((std::filesystem::path(absolutePath) / "Resources/Fox.gltf").string(), mMesh);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Fox_Texture.png").string(), mBaseColor);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Fox_emissive.jpg").string(), mEmmisive);
+	ResourceImporter::ReadTextureFile((std::filesystem::path(absolutePath) / "Resources/Fox_Normal.jpg").string(), mNormal);
 
 	mModelMatrix.World = XMMatrixIdentity();
 	mModelMatrix.View = XMMatrixIdentity();
